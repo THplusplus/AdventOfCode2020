@@ -4,6 +4,8 @@ using static System.IO.File;
 
 int[] inputs = ReadAllLines("input.txt").Select(line => int.Parse(line)).ToArray();
 
+/* Part 1 */
+
 Write("Part 1: ");
 for (int i = 0; i < inputs.Length; ++i)
 	for (int j = i + 1; j < inputs.Length; ++j)
@@ -13,6 +15,8 @@ for (int i = 0; i < inputs.Length; ++i)
 			WriteLine(inputs[i] * inputs[j]);
 		}
 	}
+
+/* Part 2 */
 
 Write("Part 2: ");
 for (int i = 0; i < inputs.Length; ++i)
